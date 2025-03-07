@@ -14,26 +14,33 @@ function move() {
 
 addEventListener('keydown', function(event) {
     if (event.key == 'd' && positionX < limite/2){
-        positionX += 20;
+        positionX += 30;
     }
     else if (event.key == 'a' && positionX > -limite/2) {
-        positionX -= 20;
+        positionX -= 30;
     }
     move()
 })
 
-
-
-const enemieLimit = window.innerWidth - enemies.clientWidth
+const newEnemie = document.createElement("div");
 
 function criarInimigo() {
-    let positionXenemie = Math.floor(Math.random() * 1367);
-    const newEnemie =  document.createElement("div");
+    let SpawnEnemie = Math.floor(Math.random() * 1367)
     newEnemie.classList.add("enemies")
     moviEnemie.appendChild(newEnemie)
+    newEnemie.style.left = SpawnEnemie + "px"
+    console.log(SpawnEnemie)
+    return SpawnEnemie
+} 
 
-    person.style.left = positionXenemie + "px"
 
-}
 
-setInterval(criarInimigo, 2000);
+let VariableMovimentation = setInterval(criarInimigo,3000)
+
+
+
+
+
+
+
+
