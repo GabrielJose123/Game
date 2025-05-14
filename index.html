@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sad asdas asda </title>
+    <title>Zebas Cowboy</title>
     <link rel="stylesheet" href="./style/style.css">
    
 </head>
@@ -28,6 +28,18 @@
         
    
    <script src="./js/index.js"></script>
-   
+   <script>
+    window.addEventListener('wheel', function(e) {
+        if (e.ctrlKey) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+
+    window.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey || e.metaKey) && (e.key === '+' || e.key === '-' || e.key === '=')) {
+            e.preventDefault();
+        }
+    });
+</script>
 </body>
 </html>

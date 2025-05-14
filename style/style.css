@@ -6,7 +6,7 @@
    
 
     body {
-        background-image: url('../icons/Designer.jpeg');
+        background-image: url('../icons/backgroud.png');
         animation: trocaImagem 10s ease-in-out;
     }
     
@@ -29,7 +29,7 @@
     .person {
         height: 120px;
         width: 70px;
-        background-image: url('../icons/person(1).png');
+        background-image: url('../icons/person\(1\).png');
         background-position: center;
         background-size: cover;
         left: 50%;
@@ -39,7 +39,6 @@
     }
 
     .enemies {
-        background-color: brown;
         height: 150px;
         width: 170px;
         background-image: url('../icons/enemie(1).png');
@@ -49,7 +48,6 @@
         left: 50%;
         transform: translateX(-50%);
         animation: fall 5s ease-in-out forwards;
-        
     }
 
     @keyframes fall {
@@ -87,8 +85,6 @@
         left: 50%;
         transform: translateX(-50%);
         animation: tiro 2.1s ease-in-out forwards;
-        background-color: blue;
-        
     }
     
     @keyframes tiro {
